@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D41E35; /* Fundo vermelho claro */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça o logo, título e nav */
+    padding: 20px;
+    background-color: #DACCB0; /* Cabeçalho vermelho */
+    color: rgb(145, 0, 0);
+}
+
+.header-logo {
+    max-width: 60px; /* Ajuste o tamanho do logo */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre o logo e o título */
+}
+
+.navbar ul {
+    list-style: none; /* Remove os marcadores */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Exibe os itens em linha */
+}
+
+.navbar li {
+    margin-left: 20px; /* Espaçamento entre os links */
+}
+
+.navbar a {
+    color: rgb(187, 4, 4); /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.header-image {
+    text-align: center;
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+}
+
+.logo-image {
+    max-width: 100%; /* Mantém a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.options-table {
+    text-align: center;
+    margin: 20px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os botões se movam para a próxima linha */
+}
+
+.option-button {
+    width: 150px; /* Largura do botão */
+    height: 150px; /* Altura do botão */
+    margin: 15px; /* Espaçamento entre os botões */
+    text-decoration: none; /* Remove sublinhado */
+    color: rgb(13, 8, 8); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid #fdfffc; /* Borda vermelha */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Aumenta o preenchimento interno */
+    transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-button:hover {
+    background-color: #4eed26; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.option-image {
+    max-width: 100px; /* Aumenta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #DACCB0; /* Rodapé vermelho */
+    color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Coloca os links em coluna */
+    }
+
+    .navbar li {
+        margin-left: 0; /* Remove margem esquerda */
+        margin-top: 10px; /* Adiciona margem em cima */
+    }
+
+    .option-button {
+        width: 100%; /* Botão ocupa a largura total */
+        height: auto; /* Altura ajusta automaticamente */
+    }
+
+    .option-image {
+        max-width: 80px; /* Ajusta o tamanho da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        max-width: 40px; /* Reduz o tamanho do logo */
+    }
+
+    .option-button {
+        width: 90%; /* Botão ocupa 90% da largura */
+        height: auto; /* Altura ajusta automaticamente */
+    }
+
+    .footer {
+        font-size: 14px; /* Ajusta o tamanho da fonte do rodapé */
+    }
+}

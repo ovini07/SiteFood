@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff0000; /* Cor do cabeçalho */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px; /* Limite o tamanho do logo */
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #555; /* Cor do botão de voltar */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #333; /* Cor ao passar o mouse */
+}
+
+.burger-menu {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.burger-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.burger-item h3 {
+    margin: 0 0 10px;
+}
+
+.add-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4caf50; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e7e7e7;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
